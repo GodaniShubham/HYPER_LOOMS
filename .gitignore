@@ -31,3 +31,10 @@ venv/
 .DS_Store
 Thumbs.db
 
+.runtime-logs/
+backend/.tmp/
+*.log
+.env
+node_modules/
+__pycache__/
+*.pyc
