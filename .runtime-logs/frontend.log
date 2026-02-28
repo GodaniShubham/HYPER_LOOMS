@@ -1,0 +1,35 @@
+
+> computefabric-frontend@0.1.0 dev
+> next dev -H 0.0.0.0 -p 3000
+
+  ▲ Next.js 14.2.35
+  - Local:        http://localhost:3000
+  - Network:      http://0.0.0.0:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ✓ Ready in 4.6s
+ ○ Compiling /jobs ...
+(node:10672) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ ✓ Compiled /jobs in 17.1s (746 modules)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../typescript/lib/typescript' in d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build for build dependencies doesn't lead to expected result 'D:\AMD\Decentralised  GPU\frontend\node_modules\typescript\lib\typescript.js', but to 'd:\AMD\Decentralised  GPU\frontend\node_modules\typescript\lib\typescript.js' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../typescript/lib/typescript (expected D:\AMD\Decentralised  GPU\frontend\node_modules\typescript\lib\typescript.js)
+<w>  at file dependencies d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\load-jsconfig.js
+<w>  at file d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\load-jsconfig.js
+<w>  at file dependencies d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\webpack-config.js
+<w>  at file d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\webpack-config.js
+<w>  at file dependencies d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Resolving '../../../typescript/lib/typescript' in d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build for build dependencies doesn't lead to expected result 'D:\AMD\Decentralised  GPU\frontend\node_modules\typescript\lib\typescript.js', but to 'd:\AMD\Decentralised  GPU\frontend\node_modules\typescript\lib\typescript.js' instead. Resolving dependencies are ignored for this path.
+<w>  at resolve commonjs file ../../../typescript/lib/typescript (expected D:\AMD\Decentralised  GPU\frontend\node_modules\typescript\lib\typescript.js)
+<w>  at file dependencies d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\load-jsconfig.js
+<w>  at file d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\load-jsconfig.js
+<w>  at file dependencies d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\webpack-config.js
+<w>  at file d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\webpack-config.js
+<w>  at file dependencies d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\handle-externals.js
+<w>  at file d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\handle-externals.js
+<w>  at file dependencies d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at file d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js
+<w>  at resolve commonjs d:\AMD\Decentralised  GPU\frontend\node_modules\next\dist\build\webpack\loaders\next-swc-loader.js

@@ -1,0 +1,25 @@
+node_agent_started coordinator_url=http://192.168.1.10:8000 demo_mode=True
+services_started
+status_update coordinator=unknown agent=starting registration=not-registered runtime=stopped node_id=
+runtime_start_info: auto_registration_pending
+status_update coordinator=unknown agent=starting registration=not-registered runtime=awaiting-registration node_id=node-25c4cfa03a
+status_update coordinator=unknown agent=ok registration=registered runtime=awaiting-registration node_id=node-25c4cfa03a
+status_update coordinator=unknown agent=ok registration=registered runtime=awaiting-registration node_id=node-25c4cfa03a
+status_update coordinator=unknown agent=ok registration=registered runtime=awaiting-services node_id=node-25c4cfa03a
+runtime_already_running
+runtime_already_running
+runtime_already_running
+status_update coordinator=ok agent=ok registration=registered runtime=awaiting-services node_id=node-25c4cfa03a
+runtime_already_running
+registered node_id=node-25c4cfa03a
+status_update coordinator=ok agent=ok registration=registered runtime=awaiting-services node_id=node-25c4cfa03a
+status_update coordinator=ok agent=ok registration=registered runtime=awaiting-services node_id=node-25c4cfa03a
+runtime_already_running
+runtime_already_running
+status_update coordinator=ok agent=ok registration=registered runtime=awaiting-services node_id=node-25c4cfa03a
+status_update coordinator=ok agent=ok registration=registered runtime=awaiting-services node_id=node-25c4cfa03a
+runtime_already_running
+runtime_already_running
+status_update coordinator=ok agent=ok registration=registered runtime=running node_id=node-25c4cfa03a
+status_update coordinator=ok agent=ok registration=registered runtime=running node_id=node-25c4cfa03a
+status_update coordinator=ok agent=ok registration=registered runtime=running node_id=node-25c4cfa03a

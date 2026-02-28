@@ -1,0 +1,33 @@
+INFO:     Started server process [10496]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+D:\Decentralised  GPU\backend\.venv\Lib\site-packages\pydantic\main.py:426: UserWarning: Pydantic serializer warnings:
+  Expected `JobLogEntry` but got `dict` with value `{'message': 'Claimed by n..._id': 'node-8b02bec811'}` - serialized value may not be as expected
+  return self.__pydantic_serializer__.to_python(
+D:\Decentralised  GPU\backend\.venv\Lib\site-packages\pydantic\type_adapter.py:527: UserWarning: Pydantic serializer warnings:
+  Expected `JobLogEntry` but got `dict` with value `{'message': 'Claimed by n..._id': 'node-8b02bec811'}` - serialized value may not be as expected
+  return self.serializer.to_python(
+D:\Decentralised  GPU\backend\.venv\Lib\site-packages\pydantic\main.py:426: UserWarning: Pydantic serializer warnings:
+  Expected `JobLogEntry` but got `dict` with value `{'message': 'Claimed by n..._id': 'node-8b02bec811'}` - serialized value may not be as expected
+  Expected `JobLogEntry` but got `dict` with value `{'message': 'Node node-8b..._id': 'node-8b02bec811'}` - serialized value may not be as expected
+  return self.__pydantic_serializer__.to_python(
+D:\Decentralised  GPU\backend\.venv\Lib\site-packages\pydantic\type_adapter.py:527: UserWarning: Pydantic serializer warnings:
+  Expected `JobLogEntry` but got `dict` with value `{'message': 'Claimed by n..._id': 'node-8b02bec811'}` - serialized value may not be as expected
+  Expected `JobLogEntry` but got `dict` with value `{'message': 'Node node-8b..._id': 'node-8b02bec811'}` - serialized value may not be as expected
+  return self.serializer.to_python(
+INFO:     ('127.0.0.1', 55617) - "WebSocket /ws/network" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 55698) - "WebSocket /ws/network" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 55781) - "WebSocket /ws/network" [accepted]
+INFO:     connection open
+INFO:     ('127.0.0.1', 55793) - "WebSocket /ws/network" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     ('127.0.0.1', 55851) - "WebSocket /ws/network" [accepted]
+INFO:     connection open
+INFO:     connection closed
+INFO:     connection closed

@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 222 26% 7%;
+  --foreground: 23 20% 95%;
+  --card: 222 22% 10%;
+  --card-foreground: 23 20% 95%;
+  --muted: 221 13% 20%;
+  --muted-foreground: 23 11% 74%;
+  --primary: 5 92% 56%;
+  --primary-foreground: 8 58% 7%;
+  --border: 220 12% 24%;
+  --accent: 26 92% 54%;
+  --success: 143 52% 47%;
+  --warning: 37 92% 56%;
+  --danger: 2 82% 60%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  position: relative;
+  background:
+    radial-gradient(circle at 14% 0%, rgba(255, 84, 48, 0.2), transparent 33%),
+    radial-gradient(circle at 86% 0%, rgba(255, 150, 58, 0.14), transparent 29%),
+    linear-gradient(180deg, rgba(16, 19, 27, 1) 0%, rgba(10, 12, 18, 1) 62%, rgba(7, 9, 14, 1) 100%);
+  color: hsl(var(--foreground));
+  font-family: var(--font-body), "Segoe UI", sans-serif;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 48px 48px;
+  opacity: 0.16;
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: repeating-linear-gradient(-55deg, rgba(255, 255, 255, 0.03) 0 1px, transparent 1px 54px);
+  opacity: 0.08;
+  z-index: -1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), "Segoe UI", sans-serif;
+  letter-spacing: 0.01em;
+}
+
+@keyframes riseFade {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes emberPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 rgba(255, 87, 34, 0);
+  }
+  50% {
+    box-shadow: 0 0 22px rgba(255, 87, 34, 0.32);
+  }
+}
+
+@keyframes sweep {
+  from {
+    transform: translateX(-120%);
+  }
+  to {
+    transform: translateX(120%);
+  }
+}
+
+.animate-rise-fade {
+  animation: riseFade 0.65s ease-out both;
+}
+
+.animate-ember {
+  animation: emberPulse 2.8s ease-in-out infinite;
+}
+
+.section-kicker {
+  font-family: var(--font-heading), sans-serif;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  color: rgba(255, 147, 91, 0.95);
+}
+
+.surface-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.surface-panel::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(100deg, transparent 22%, rgba(255, 120, 54, 0.1) 50%, transparent 78%);
+  transform: translateX(-120%);
+  animation: sweep 7.5s ease-in-out infinite;
+  pointer-events: none;
+  opacity: 0.14;
+}
+
+.metal-panel {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(155deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.01) 35%, rgba(0, 0, 0, 0.14));
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.07),
+    0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+.pathway-step {
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(150deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+  transition: border-color 180ms ease, transform 180ms ease, background 180ms ease;
+}
+
+.pathway-step:hover {
+  transform: translateY(-1px);
+  border-color: rgba(255, 107, 66, 0.46);
+}
+
+.pathway-step-active {
+  border-color: rgba(255, 104, 56, 0.66);
+  background: linear-gradient(160deg, rgba(255, 93, 46, 0.24), rgba(255, 93, 46, 0.08));
+}
+
+.pathway-step-done {
+  border-color: rgba(98, 212, 142, 0.46);
+}
+
+.pathway-step-locked {
+  opacity: 0.72;
+}
