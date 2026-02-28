@@ -1,8 +1,8 @@
-# ComputeFabric
+# Hyperlooms
 
 Programmable distributed compute for AI workloads.
 
-ComputeFabric is a startup-grade distributed AI compute platform built as a clean monolith:
+Hyperlooms is a startup-grade distributed AI compute platform built as a clean monolith:
 - `frontend`: Next.js + TypeScript + Tailwind operator UI.
 - `backend`: FastAPI async orchestrator with websockets.
 - Redis/Postgres-ready contracts with phase-1 in-memory execution.
@@ -164,8 +164,8 @@ python -m app.main
 Optional container sandbox image for node execution:
 
 ```bash
-cd ComputeFabric_Node/sandbox
-docker build -t computefabric-node-sandbox:latest .
+cd Hyperlooms_Node/sandbox
+docker build -t hyperlooms-node-sandbox:latest .
 ```
 
 
